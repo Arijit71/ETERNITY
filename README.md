@@ -49,7 +49,7 @@ Follow these steps to set up and run the project:
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd Eternity
+   cd ETERNITY
    ```
 3. **Install Required Dependencies**:
    ```bash
