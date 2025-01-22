@@ -65,17 +65,17 @@ Follow these steps to set up and run the project:
 
 ## How to Use
 
-1. **Upload Your Image**
+1. **Upload Your Image**:
    Start by selecting an image directly from your computer.
 
-2. **Explore Editing Options**
+2. **Explore Editing Options**:
    - **Generative Replace**: Swap objects in your images effortlessly.
    - **Smart Cropping**: Crop your photo while keeping the focus on the subject.
    - **AI Enhance**: Make your photo vibrant and sharp.
    - **Generative Fill**: Expand your image seamlessly.
    - **Upscale**: Boost the resolution for a clearer, more detailed photo.
 
-3. **Apply and Download**
+3. **Apply and Download**:
    Click apply to see instant results and download your edited photo or image.
 
 
