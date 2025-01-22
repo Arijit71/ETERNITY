@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Eternity{% endblock %}
+
+{% block main %}
+<div class="relative w-full h-full flex flex-col items-center justify-center bg-cover bg-center"
+     style="background-image: url('/static/images/bg_home.jpg'); opacity: 0.8;">
+    <!-- Dark Overlay to Enhance Text Readability -->
+    <div class="bg-black bg-opacity-50 p-10 rounded-3xl max-w-5xl text-center">
+        <!-- Title and Description -->
+        <h1 class="text-4xl font-bold text-white mb-4 whitespace-nowrap">
+            Eternity: Where Art Meets Infinite Possibilities
+        </h1>
+        <p class="text-gray-300 text-lg mb-8">
+            Explore the world of AI-enhanced art with timeless creativity and endless potential.
+        </p>
+
+        <!-- Button to Playground -->
+        <a href="/playground" class="mt-6 inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition">
+            Go to Playground
+        </a>
+    </div>
+</div>
+{% endblock %}

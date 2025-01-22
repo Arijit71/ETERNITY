@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}
+Eternity | Features
+{% endblock %}
+
+{% block main %}
+
+<!-- Full-Page Background Container -->
+<div class="min-h-fit min-w-full flex items-center justify-center"
+    style="background-image: url('/static/images/bg_features.jpg'); background-size: cover; background-position: center;">
+
+    <!-- Inner Container with Opacity Control for the Main Content -->
+    <div class="max-w-5xl pt-4 rounded-lg shadow-lg mx-auto">
+
+        <!-- Title -->
+        <h1 class="text-3xl font-bold text-center mb-8 text-white">Explore Eternity</h1>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-3 gap-10 mb-8">
+            <!-- Feature 1 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/upload_image.jpg" alt="Upload Images" class="w-36 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">Upload Images</h2>
+                    <p class="text-gray-400">Upload images directly from your computer</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/gen_replace.jpg" alt="Generative Replace" class="w-48 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">Generative Replace</h2>
+                    <p class="text-gray-400">Replace any object from an image with ease</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/sm_crp.png" alt="Smart Cropping" class="w-48 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">Smart Cropping</h2>
+                    <p class="text-gray-400">Crop images to desired dimensions while focusing on the main content</p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/ai_enhance.jpg" alt="AI Enhance" class="w-48 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">AI Enhance</h2>
+                    <p class="text-gray-400">Enhance images using AI technology</p>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/gen_fill.jpg" alt="Generative Fill" class="w-48 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">Generative Fill</h2>
+                    <p class="text-gray-400">Creatively expand images by seamlessly integrating with the original
+                        content</p>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div
+                class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center bg-opacity-75 transition hover:-translate-y-2 hover:scale-[1.15] duration-300">
+                <img src="/static/images/ai_upscale.jpg" alt="AI Upscale" class="w-48 h-32 object-cover rounded-2xl shadow-black shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-white">Upscale</h2>
+                    <p class="text-gray-400">Make the images more clearer by increasing the resolution of the image</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Coming Soon Box -->
+        <div class="min-w-full bg-gray-900 py-4">
+            <p class="text-center text-xl text-white">More exciting features are coming soon...</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
