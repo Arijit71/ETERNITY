@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resizeInputs.classList.add('hidden');
                 resizeInputs.classList.remove('flex');  // Remove flex class when hidden
                 backgroundReplaceInputs.classList.add('hidden');
-            } else if (selectedAction === 'bg_replace') {
+            } else if (selectedAction === 'gen_replace') {
                 backgroundReplaceInputs.classList.remove('hidden');
                 resizeInputs.classList.add('hidden');
                 genFillInputs.classList.add('hidden');
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             processImage(selectedAction, { aspectRatio });
 
-        } else if (selectedAction === 'bg_replace') {
+        } else if (selectedAction === 'gen_replace') {
             const fromSrc = from_src.value.trim();
             const toSrc = to_src.value.trim();
 

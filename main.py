@@ -49,8 +49,8 @@ def process_image():
 
     # Define transformations based on action
     transformations = {
-        "bg_replace": {"effect": f"gen_replace:from_{from_src};to_{to_src}"},
-        "resize": {"gravity": "auto", "width": width, "height": height, "crop": "fill"},
+        "gen_replace": {"effect": f"gen_replace:from_{from_src};to_{to_src}"},
+        "smart_cropping": {"gravity": "auto", "width": width, "height": height, "crop": "fill"},
         "ai_enhance": {"effect": "enhance"},
         "gen_fill": {"aspect_ratio": aspect_ratio, "gravity": "center", "background": "gen_fill", "crop": "pad"},
         "upscale": {"effect": "upscale"}
@@ -62,7 +62,7 @@ def process_image():
             if action == "resize" and (not width or not height):
                 return jsonify({"error": "Width and height are required for resizing"}), 400
 
-            if action == "bg_replace" and (not from_src or not to_src):
+            if action == "gen_replace" and (not from_src or not to_src):
              return jsonify({"error": "From and to values are required for background replacement"}),    400
 
             img_url = cloudinary.CloudinaryImage(public_id).build_url(**transformation_params)
